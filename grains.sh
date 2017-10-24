@@ -14,7 +14,7 @@
 #   ...
 #
 function grain_get_linux_os() {
-    if `which lsb_release &>/dev/null`; then
+    if which lsb_release &>/dev/null; then
         lsb_release -i | awk -F ':\t' '{print $2}'
     elif [ -f /etc/redhat-release ]; then
         cat /etc/redhat-release | sed 's/ Linux release.*//'
