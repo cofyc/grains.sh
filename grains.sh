@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # A single shell script to gather basic information on Linux host.
 #
